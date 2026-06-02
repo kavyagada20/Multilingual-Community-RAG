@@ -1,0 +1,37 @@
+# Core
+python-dotenv
+
+# PDF Processing
+pymupdf
+
+# OCR
+paddleocr
+paddlepaddle
+
+# Embeddings
+sentence-transformers
+
+# Vector Database
+chromadb
+
+# LLM
+google-generativeai
+
+# Frontend
+streamlit
+
+# API
+fastapi
+uvicorn
+
+# Utilities
+pandas
+numpy
+tqdm
+
+# Image Processing
+opencv-python
+Pillow
+
+# Testing
+pytest
