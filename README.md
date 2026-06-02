@@ -1,8 +1,4 @@
 # Multilingual-Community-RAG
-Multilingual RAG-based Community Knowledge Assistant for Patrika archives, community notices, events, and historical records.
-
-# Community Knowledge Assistant
-
 A multilingual Retrieval-Augmented Generation (RAG) system designed to transform community archives, Patrika publications, notices, events, and historical records into an intelligent conversational assistant.
 
 ---
