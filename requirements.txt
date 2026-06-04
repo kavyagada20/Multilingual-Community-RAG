@@ -8,6 +8,9 @@ pymupdf
 paddleocr
 paddlepaddle
 
+# Google Document AI
+google-cloud-documentai
+
 # Embeddings
 sentence-transformers
 
