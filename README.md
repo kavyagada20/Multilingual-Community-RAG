@@ -79,6 +79,9 @@ LLM (Gemini / Groq / Ollama)
 Community Knowledge Assistant
 ```
 
+### Visual Architecture Diagram
+![RAG chatbot architecture for Vagad Patrika](docs/RAG%20chatbot%20architecture%20for%20Vagad%20Patrika.png)
+
 ---
 
 ## Technology Stack
@@ -138,4 +141,3 @@ Community Knowledge Assistant
 ## Contributors
 
 - Kavya Gada
-- Team Members
