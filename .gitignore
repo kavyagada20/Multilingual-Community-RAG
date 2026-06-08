@@ -50,3 +50,14 @@ tmp/
 
 # PDF Files
 *.pdf
+
+
+# OCR Outputs
+extracted_json/
+
+# Research Notes
+research for the project and stuffs/
+
+# Temporary Images
+temp_page*.png
+temp_page.png
