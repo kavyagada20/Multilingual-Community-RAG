@@ -45,5 +45,8 @@ build/
 temp/
 tmp/
 
+# Environment variables
+.env
+
 # PDF Files
 *.pdf
