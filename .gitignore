@@ -44,3 +44,6 @@ build/
 # Temporary
 temp/
 tmp/
+
+# PDF Files
+*.pdf
