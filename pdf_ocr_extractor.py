@@ -71,6 +71,11 @@ def extract_one_page(page, page_num, filename, pub_date):
             ])
             full_text = response.text.strip()
     except Exception as e:
+        err_msg = str(e).lower()
+        if "quota" in err_msg or "429" in err_msg or "limit" in err_msg:
+            print(f"\nCRITICAL ERROR: API quota/limit exceeded. Stopping script to prevent generating empty JSONs.")
+            print(f"Details: {e}")
+            raise e
         print(f"    Warning: OCR failed for page {page_num} with error: {e}")
 
     # Step C: Delete the temporary image
@@ -165,7 +170,7 @@ def run_batch():
                     saved_pages = json.load(f)
                 
                 # If we have all pages and they all have content
-                if len(saved_pages) >= total_pdf_pages:
+                if len(saved_pages) >= total_pdf_pages and all(p.get("char_count", 0) > 0 for p in saved_pages):
                     print(f"[{idx+1}/{len(pdfs)}] Already done, skipping: {pdf_path.name}")
                     continue
             except Exception:
