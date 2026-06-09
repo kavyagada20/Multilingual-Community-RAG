@@ -12,7 +12,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 # ----------------------------------------------------------------
 # CONFIG — change these if your folders are different
 INPUT_FOLDER  = r"C:\Users\kavyagada\Downloads\Multilingual-Community-RAG\vagad patrika"
-OUTPUT_FOLDER = r"C:\Users\kavyagada\Downloads\Multilingual-Community-RAG\extracted_json"
+OUTPUT_FOLDER = r"C:\Users\kavyagada\Downloads\Multilingual-Community-RAG\extracted_json\vagad"
 # ----------------------------------------------------------------
 
 # Load environment variables (API Key)
@@ -59,8 +59,8 @@ def extract_one_page(page, page_num, filename, pub_date):
     # Step B: Run Gemini OCR on the image
     full_text = ""
     try:
-        # Respect Gemini API free tier rate limits (15 RPM -> ~4 seconds per request)
-        time.sleep(4)
+        # Respect Gemini API free tier rate limits (15 RPM -> 5.5 seconds per request)
+        time.sleep(5.5)
         
         with Image.open(img_path) as img:
             response = model.generate_content([
