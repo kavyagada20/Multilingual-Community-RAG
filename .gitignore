@@ -61,3 +61,11 @@ research for the project and stuffs/
 # Temporary Images
 temp_page*.png
 temp_page.png
+
+# Pipeline Outputs
+cleaned_json/
+classified_json/
+chunked_json/
+
+# Runtime State
+processing_state.json
